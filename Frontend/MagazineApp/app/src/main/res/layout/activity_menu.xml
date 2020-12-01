@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/vlogging"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            app:colorScheme="google"
+            app:text="IT IN THE VALLEY"
+            app:textSize="40"
+            app:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/fab_margin">
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chipbg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Register"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Or"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,SmallSp" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chipbgaccent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Login"
+                android:textColor="@color/grey_1000"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

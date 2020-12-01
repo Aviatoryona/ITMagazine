@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <ImageView
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/vlogging"
+        tools:ignore="ContentDescription" />
+
+    <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        app:text="IT IN THE VALLEY"
+        app:colorScheme="google"
+        android:layout_gravity="center"
+        app:textStyle="bold"
+        app:textSize="40"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

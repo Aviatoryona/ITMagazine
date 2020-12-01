@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.magazineapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup"
+        tools:targetApi="n">
+        <activity
+            android:name=".PhotoDetails"
+            android:label="@string/title_activity_photo_details"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AdvertDetails"
+            android:label="@string/title_activity_advert_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StoryDetails"
+            android:label="@string/title_activity_story_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadPhotos"
+            android:label="@string/title_activity_upload_photos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MakeAdvert"
+            android:label="@string/title_activity_make_advert"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateStory"
+            android:label="@string/title_activity_create_story"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Processors"
+            android:label="@string/title_activity_processors"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Editors"
+            android:label="@string/title_activity_editors"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Marketing"
+            android:label="@string/title_activity_marketing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Accounts"
+            android:label="@string/title_activity_accounts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photographer"
+            android:label="@string/title_activity_photographer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Journalist"
+            android:label="@string/title_activity_journalist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Advertiser"
+            android:label="@string/title_activity_advertiser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
